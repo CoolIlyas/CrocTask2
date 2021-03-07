@@ -1,5 +1,5 @@
 import org.junit.Assert;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 public class TaskTest {
     static ArrayList<String> expectedAdresses;
-    HashMap<String,ArrayList<String>> expectedSortedAdresses;
-    @Before
-    public void initializer () {
+    static HashMap<String,ArrayList<String>> expectedSortedAdresses;
+    @BeforeClass
+    public static void initializer () {
         expectedAdresses = new ArrayList<String>();
         expectedAdresses.add("DEVELOPER.@gmail.com");
         expectedAdresses.add("t+es+ter@GMAIL.COM");

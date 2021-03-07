@@ -15,7 +15,7 @@ public class Task {
         ArrayList<String> adresses = new ArrayList<String>();
         int lenght = scanner.nextInt();
         scanner.nextLine();
-        for (int i = 0; i < lenght; i++){
+        for (int i = 0; i < lenght; i++) {
             adresses.add(scanner.nextLine());
         }
         return adresses;
